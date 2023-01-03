@@ -56,21 +56,38 @@ namespace AOC_D1
         {
             int current = 0;
             int highestVal = 0;
+            int secondVal = 0;
+            int thirdVal = 0;
             int highestElf = 0;
+            int sum = 0;
             for (int i = 0; i < calories.Length; i++)
             {
                 if (calories[i] != 0)
                     current += calories[i];
-                else if (current > highestVal)
+                else if (current > thirdVal)
                 {
-                    highestVal = current;
-                    highestElf = i + 1;
+                    if (current > highestVal)
+                    {
+                        thirdVal = secondVal;
+                        secondVal = highestVal;
+                        highestVal = current;
+                        highestElf = i + 1;
+                    }
+                    else if (current > secondVal)
+                    {
+                        thirdVal = secondVal;
+                        secondVal = current;
+                    }
+                    else
+                        thirdVal = current;
                     current = 0;
                 }
                 else
                     current = 0;
             }
-            Console.WriteLine("Elf " + highestElf + " had the most calories (" + highestVal + ")");
+            sum = highestVal + secondVal + thirdVal;
+            Console.WriteLine("Elf " + highestElf + " had the most calories (" + highestVal + ").");
+            Console.WriteLine("The top three elves are carrying " + sum + " calories!");
         }
     }
 }
