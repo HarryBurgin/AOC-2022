@@ -37,6 +37,15 @@ namespace Day_2
                     score += 2;
                 else
                     score += 3;
+
+
+
+                if (elf == me)
+                    score += 3;
+                else if ((elf == "A" && me == "Y") || (elf == "B" && me == "Z") || (elf == "C" && me == "X"))
+                {
+                    score += 6;
+                }
             }
         }
     }
