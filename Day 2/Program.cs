@@ -9,6 +9,7 @@ namespace Day_2
         static void Main(string[] args)
         {
             ReadFile();
+            Calculate();
         }
 
         //Function that reads the text file containing the raw data
@@ -17,8 +18,6 @@ namespace Day_2
             string txtFile = @"Data.txt";
             data = File.ReadAllLines(txtFile);
 
-            foreach (string line in data)
-                Console.WriteLine(line);
             return data;
         }
 
@@ -47,6 +46,7 @@ namespace Day_2
                     score += 6;
                 }
             }
+            Console.WriteLine("Using the strategy guide, your score would be " + score + "!");
         }
     }
 }
