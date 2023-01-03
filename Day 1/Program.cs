@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace AOC_D1
 {
@@ -6,7 +7,18 @@ namespace AOC_D1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("This is my solution for Day 1 of Advent Of Code 2022");
+            readFile();
+        }
+
+        static void readFile()
+        {
+            string txtFile = @"Data.txt";
+            string[] calories = File.ReadAllLines(txtFile);
+
+            foreach (string line in calories)
+                Console.WriteLine(line);
+
         }
     }
 }
