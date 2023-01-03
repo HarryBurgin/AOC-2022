@@ -39,7 +39,7 @@ namespace Day_2
 
 
 
-                if (elf == me)
+                if ((elf == "A" && me == "X") || (elf == "B" && me == "Y") || (elf == "C" && me == "Z"))
                     score += 3;
                 else if ((elf == "A" && me == "Y") || (elf == "B" && me == "Z") || (elf == "C" && me == "X"))
                 {
