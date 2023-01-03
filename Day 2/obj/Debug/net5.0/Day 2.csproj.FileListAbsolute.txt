@@ -5,7 +5,6 @@ C:\Users\harry\OneDrive\AOC 2022\Day 2\bin\Debug\net5.0\Day 2.runtimeconfig.dev.
 C:\Users\harry\OneDrive\AOC 2022\Day 2\bin\Debug\net5.0\Day 2.dll
 C:\Users\harry\OneDrive\AOC 2022\Day 2\bin\Debug\net5.0\ref\Day 2.dll
 C:\Users\harry\OneDrive\AOC 2022\Day 2\bin\Debug\net5.0\Day 2.pdb
-C:\Users\harry\OneDrive\AOC 2022\Day 2\obj\Debug\net5.0\Day 2.csproj.AssemblyReference.cache
 C:\Users\harry\OneDrive\AOC 2022\Day 2\obj\Debug\net5.0\Day 2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\harry\OneDrive\AOC 2022\Day 2\obj\Debug\net5.0\Day 2.AssemblyInfoInputs.cache
 C:\Users\harry\OneDrive\AOC 2022\Day 2\obj\Debug\net5.0\Day 2.AssemblyInfo.cs
