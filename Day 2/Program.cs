@@ -21,5 +21,23 @@ namespace Day_2
                 Console.WriteLine(line);
             return data;
         }
+
+        static void Calculate()
+        {
+            int score = 0;
+            string elf;
+            string me;
+            for (int i = 0; i < data.Length; i++)
+            {
+                elf = data[i].Substring(0, 1);
+                me = data[i].Substring(1);
+                if (me == "X")
+                    score += 1;
+                else if (me == "Y")
+                    score += 2;
+                else
+                    score += 3;
+            }
+        }
     }
 }
