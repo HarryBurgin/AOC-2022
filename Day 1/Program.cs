@@ -67,6 +67,8 @@ namespace AOC_D1
                     highestElf = i + 1;
                     current = 0;
                 }
+                else
+                    current = 0;
             }
             Console.WriteLine("Elf " + highestElf + " had the most calories (" + highestVal + ")");
         }
