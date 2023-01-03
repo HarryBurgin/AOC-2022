@@ -28,20 +28,6 @@ namespace AOC_D1
 
         static int[] DataConversion()
         {
-            //string d;
-            //int c;
-            //for (int i = 0; i < data.Length; i++)
-            //{
-            //    if (data[i] == "")
-            //        calories[i] = 0;
-            //    else
-            //    {
-            //        d = data[i];
-            //        c = Convert.ToInt32(d);
-            //        calories[i] = c;
-            //    }
-            //}
-
             for (int i = 0; i < data.Length; i++)
             {
                 if (data[i] == "")
