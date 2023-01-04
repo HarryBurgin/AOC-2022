@@ -37,12 +37,14 @@ namespace Day_3
 
                 for (int j = 0; j < c1.Length; j++)
                 {
-                    if (c1[j] == c2[j])
+                    string search = c1[j].ToString();
+                    if (c2.Contains(search))
                     {
                         if (Char.IsUpper(c1[j]))
-                            sum += (Array.IndexOf(uppers, c1[j]) + 27);
+                            sum = sum + (Array.IndexOf(uppers, search) + 27);
                         else
-                            sum += (Array.IndexOf(lowers, c1[j]) + 1);
+                            sum = sum + (Array.IndexOf(lowers, search) + 1);
+                        Console.WriteLine(sum);
                     }
                 }
             }
