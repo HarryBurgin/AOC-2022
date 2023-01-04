@@ -29,12 +29,12 @@ namespace Day_2
             for (int i = 0; i < data.Length; i++)
             {
                 elf = data[i].Substring(0, 1);
-                me = data[i].Substring(1);
+                me = data[i].Substring(2);
                 if (me == "X")
                     score += 1;
                 else if (me == "Y")
                     score += 2;
-                else
+                else if (me == "Z")
                     score += 3;
 
 
