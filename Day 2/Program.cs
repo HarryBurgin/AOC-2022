@@ -48,5 +48,32 @@ namespace Day_2
             }
             Console.WriteLine("Using the strategy guide, your score would be " + score + "!");
         }
+        static void Calculate2()
+        {
+            int score = 0;
+            string elf;
+            string result;
+            for (int i = 0; i < data.Length; i++)
+            {
+                elf = data[i].Substring(0, 1);
+                result = data[i].Substring(2);
+                //if (result == "X")
+                    //score += 1;
+                if (result == "Y")
+                    score += 3;
+                else if (result == "Z")
+                    score += 6;
+
+
+
+                if ((elf == "A" && result == "X") | (elf == "B" && result == "Y") | (elf == "C" && result == "Z"))
+                    score += 3;
+                else if ((elf == "A" && result == "Y") | (elf == "B" && result == "Z") | (elf == "C" && result == "X"))
+                {
+                    score += 6;
+                }
+            }
+            Console.WriteLine("Using the strategy guide, your score would be " + score + "!");
+        }
     }
 }
