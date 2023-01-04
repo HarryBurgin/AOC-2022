@@ -32,8 +32,8 @@ namespace Day_3
             for (int i = 0; i < rucksacks.Length; i++)
             {
                 string sack = rucksacks[i];
-                c1 = sack.Substring(0, (sack.Length / 2) - 1);
-                c2 = sack.Substring((sack.Length / 2) - 1);
+                c1 = sack.Substring(0, sack.Length / 2);
+                c2 = sack.Substring(sack.Length / 2);
 
                 for (int j = 0; j < c1.Length; j++)
                 {
